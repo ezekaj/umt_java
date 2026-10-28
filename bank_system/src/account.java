@@ -1,8 +1,10 @@
+//import java.util.Scanner
+
 public class account{
 	public account() {
 		this.balance = 0;
 	}
-	private double balance;	
+	private double balance;
 	public boolean withdraw(double ammount){
 		if (ammount > balance) {
 			System.out.println("Not enough balance for the transaction!");
