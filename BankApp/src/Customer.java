@@ -24,4 +24,8 @@ public class Customer {
     public void setName(String newName) {
         this.name = newName;
     }
+
+    public String toString() {
+        return this.id + " belongs to " + this.name;
+    }
 }
