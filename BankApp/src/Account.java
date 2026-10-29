@@ -11,6 +11,18 @@ public class Account {
         this.balance = initb;
     }
 
+    public String getaccNumber() {
+        return accountNumber;
+    }
+
+    public String getOwnerName() {
+        return ownerName;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
     public String toString() {
         return this.accountNumber + " belongs to " + this.ownerName + " and it has a balance of " + this.balance;
     }
