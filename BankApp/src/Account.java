@@ -33,6 +33,25 @@ public class Account {
         return balance;
     }
 
+    public void setName(String coolName) {
+        this.ownerName = coolName;
+    }
+
+    public void deposit(double ammount) {
+        if (ammount < 0) {
+            throw new IllegalArgumentException("Deposit ammount cannot be negative!");
+        }
+        this.balance += ammount;
+    }
+
+    public boolean withdraw(double ammount) {
+        if ((this.balance < ammount) || (ammount < 0)) {
+            throw new IllegalArgumentException("The ammount you want to withdraw its not correct!");
+        }
+        this.balance -= ammount;
+        return true;
+    }
+
     public String toString() {
         return this.accountNumber + " belongs to " + this.ownerName + " and it has a balance of " + this.balance;
     }

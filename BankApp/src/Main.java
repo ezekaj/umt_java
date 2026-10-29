@@ -7,7 +7,10 @@ public class Main {
         Account acc3 = new Account("A-003", "Gjon Gjoni", 333);
 
         System.out.println(acc1);
-        System.out.println(acc2);
-        System.out.println(acc3);
+        acc1.setName("Elvi");
+        acc1.deposit(9999);
+        System.out.println(acc1);
+        acc1.withdraw(10);
+        System.out.println(acc1);
     }
 }
