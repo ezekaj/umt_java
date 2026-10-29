@@ -1,4 +1,4 @@
-package universtiy;
+package university;
 
 public class	Professor{
 	private String	employeeID;
