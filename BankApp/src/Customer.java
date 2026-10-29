@@ -16,4 +16,12 @@ public class Customer {
     public String getName() {
         return name;
     }
+
+    public void setId(String newId) {
+        this.id = newId;
+    }
+
+    public void setName(String newName) {
+        this.name = newName;
+    }
 }
