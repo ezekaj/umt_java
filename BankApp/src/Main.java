@@ -6,8 +6,8 @@ public class Main {
         Account acc2 = new Account("A-002", "Albert Gjoni", 222);
         Account acc3 = new Account("A-003", "Gjon Gjoni", 333);
 
-        System.out.print(acc1);
-        System.out.print(acc2);
-        System.out.print(acc3);
+        System.out.println(acc1);
+        System.out.println(acc2);
+        System.out.println(acc3);
     }
 }
