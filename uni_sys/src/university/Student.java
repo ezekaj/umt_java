@@ -5,7 +5,7 @@ public class Student {
 	private String			name;
 	private double			gpa;
 	private int				enrollmentYear;
-	public void Student(String studentID, String name, double gpa, int enrollmentYear) {
+	public Student(String studentID, String name, double gpa, int enrollmentYear) {
 		this.studentID = studentID;
 		this.name = name;
 		this.gpa = gpa;
