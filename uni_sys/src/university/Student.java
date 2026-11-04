@@ -10,7 +10,11 @@ public class Student {
     public Student(String studentID, String name, double gpa, int enrollmentYear) {
         this.studentID = studentID;
         this.name = name;
-        this.enrollmentYear = enrollmentYear;
+        if (enrollmentYear >= 2000) {
+            this.enrollmentYear = enrollmentYear;
+        } else {
+            throw new IllegalArgumentException("Enrollment Year should be at min 2000!");
+        }
         if (gpa < 0 || gpa > 4) {
             throw new IllegalArgumentException("GPA value should be from 0 to 4!");
         } else {
@@ -52,5 +56,14 @@ public class Student {
         }
     }
 
-    
+    public int yearsEnrolled(int currentYear) {
+        int years;
+
+        if (currentYear >= this.enrollmentYear) {
+            years = currentYear - this.enrollmentYear;
+        } else {
+            throw new IllegalArgumentException("Error value for year!");
+        }
+        return years;
+    }
 }
